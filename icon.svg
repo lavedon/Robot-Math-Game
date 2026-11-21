@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2440"/>
+      <stop offset="1" stop-color="#0d1019"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0.4" cy="0.38" r="0.7">
+      <stop offset="0" stop-color="#ffc27a"/>
+      <stop offset="1" stop-color="#ff8a1f"/>
+    </radialGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <!-- outer pulse ring (squeeze) with a gap like the in-game countdown arc -->
+  <circle cx="128" cy="128" r="86" fill="none" stroke="#2fd6b5" stroke-width="22" stroke-linecap="round"
+          stroke-dasharray="460 80" transform="rotate(-62 128 128)"/>
+  <!-- core (push) -->
+  <circle cx="128" cy="128" r="42" fill="url(#core)"/>
+  <!-- gold spark in the gap: progress / level up -->
+  <path d="M196 40 l9 21 21 9 -21 9 -9 21 -9 -21 -21 -9 21 -9z" fill="#ffd166"/>
+</svg>

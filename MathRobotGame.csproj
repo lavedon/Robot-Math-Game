@@ -1,0 +1,14 @@
+<Project Sdk="Godot.NET.Sdk/4.7.2">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MathRobot</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Core is a plain .NET library (no Godot) so the rules can be tested without the engine. -->
+    <Compile Remove="src/Core/**/*.cs;tests/**/*.cs" />
+    <ProjectReference Include="src/Core/MathRobot.Core.csproj" />
+  </ItemGroup>
+</Project>
